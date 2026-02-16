@@ -35,7 +35,7 @@ We take information security seriously. Visit our [Trust Centre](https://herbstg
 ## Contact
 
 - **Web:** [herbstgroup.io](https://herbstgroup.io)
-- **Security:** security@herbstgroup.io
+- **Security:** wimpie@herbstteam.com
 
 ---
 
