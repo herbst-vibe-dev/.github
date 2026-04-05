@@ -62,3 +62,39 @@ Derived from Herbst Group enterprise data analysis:
 
 ---
 
+### Cycle 1 — ISO 27001 & POPIA (2026-04-05)
+
+**Domains:** ISO 27001:2022 Certification, POPIA Compliance Updates
+**Estimated Cost:** ~$1.30
+
+#### Key Findings
+
+1. **ISO 27001:2013 Transition Deadline Passed:** The transition period ended October 31, 2025 — all certification audits are now against the 2022 edition only. Any organization still on the 2013 standard has had its certification withdrawn. Herbst Group's active pursuit is well-timed but must target 2022 exclusively.
+
+2. **ISO 27001 Market Exploding:** The global ISO 27001 certification market is estimated at USD 21.42B in 2026, projected to reach USD 74.56B by 2035 (15.2% CAGR). Key growth inhibitors are high implementation costs and a shortage of qualified cybersecurity experts — both relevant constraints for a mid-size SA consulting firm.
+
+3. **Auditors Now Focus on Effectiveness, Not Documentation:** In 2026 audits, the focus has shifted from "do policies exist" to "do controls reduce risk" — auditors examine metrics like time-to-patch, access review frequency, and incident detection times. Herbst's engineering-driven culture (873 tests, 54 controls) aligns well with this shift, but metrics must be captured and presented.
+
+4. **POPIA Regulator Shifting to Active Enforcement:** The Information Regulator has moved from awareness campaigns to formal enforcement — issuing fines up to R10 million and compliance directives. The 2026/27 Annual Performance Plan (presented 5 March 2026) prioritises targeted assessments in banking, insurance, health, retail, and telecommunications. Pharma consulting handling HCP data should anticipate scrutiny.
+
+5. **POPIA Gated Access Code of Conduct Imminent:** The Regulator is finalising an own-initiative Code of Conduct for Gated Access (targeting residential estates and security premises) expected by end of March 2026. While not directly pharma-related, it signals the Regulator's expanding scope and willingness to create sector-specific codes — a pharma/health data code could follow.
+
+#### Relevance Score: 4/5
+
+#### Actionable Recommendations
+- **Ensure ISO 27001 audit readiness focuses on measurable control effectiveness** — document time-to-patch, access review cadences, and incident response metrics rather than just policy documents
+- **Map Herbst's existing 54 control codes to ISO 27001:2022 Annex A controls** to identify gaps early and leverage existing engineering discipline as an advantage
+- **Monitor the Information Regulator's 2026/27 priority sectors** — health is on the list, and pharma consulting firms handling HCP personal data could be subject to targeted assessments
+- **Track the Gated Access Code of Conduct** as a precedent for sector-specific POPIA codes that may eventually cover health/pharma data processing
+
+#### Sources
+- [ISO 27001 Certification Market Forecast 2026-2035](https://www.businessresearchinsights.com/market-reports/iso-27001-certification-market-120318)
+- [ISO 27001 What Changed in 2026 — Konfirmity](https://www.konfirmity.com/blog/iso-27001-what-changed-in-2026)
+- [ISO 27001:2022 Transition Guide — Protiviti SA](https://www.protiviti.com/za-en/whitepaper/iso-27001-2022-key-changes-and-approaches-transition)
+- [Guide to ISO 27001 in South Africa — ISMS.online](https://www.isms.online/iso-27001/country/south-africa/)
+- [12 Years of POPIA — LEX Africa](https://lexafrica.com/2026/03/12-years-of-popia-in-south-africa/)
+- [Data Protection Enforcement Trends — EBnet](https://www.ebnet.co.za/data-protection-recent-developments-and-enforcement-trends/)
+- [POPIA Compliance Guide 2026 — Qualysec](https://qualysec.com/popia-compliance/)
+
+---
+
