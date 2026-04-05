@@ -215,3 +215,44 @@ Derived from Herbst Group enterprise data analysis:
 
 ---
 
+### Cycle 4 — Turso/libSQL & Next.js/Astro (2026-04-05)
+
+**Domains:** Turso/libSQL & Edge Databases, Next.js 15 & Astro Ecosystem
+**Estimated Cost:** ~$1.30 | **Cumulative:** ~$6.40
+
+#### Key Findings
+
+1. **SQLite Renaissance — Turso/libSQL at the Centre:** 2026 is being called the "SQLite Renaissance" with Turso/libSQL emerging as the standard for distributed SQLite. Key new capabilities include: virtual WAL interface for native replication, experimental `BEGIN CONCURRENT` for MVCC-based write throughput, encryption at rest via SQLCipher, built-in vector search for AI/RAG workflows, and experimental materialized views. Turso's "Embedded Replicas" feature — running a synced local SQLite instance inside the application for zero-latency reads — is a significant advantage for Herbst's read-heavy analytics workloads across 10 databases and 298 tables.
+
+2. **Turso Pricing Competitive but Cloudflare D1 Emerging as Contender:** Turso's free tier covers 500 databases/9GB storage, with the Scaler plan at ~$25/month for 24GB and 2,500 active databases. However, Cloudflare D1 at $5/month includes 25 billion rows read and 5GB storage — substantially cheaper for basic workloads. With Astro's Cloudflare acquisition (see finding 4), the Turso+Vercel vs D1+Cloudflare stack decision becomes strategically important for Herbst's database estate. PlanetScale remains stronger for write-heavy MySQL workloads but is not a direct competitor for Herbst's SQLite-based architecture.
+
+3. **Next.js 16 Has Shipped — Next.js 15 Entering Maintenance:** Next.js 16 is now the latest major release featuring Cache Components (leveraging Partial Pre-Rendering), stable Turbopack File System Caching, and a redesigned error page. Next.js 16.2 adds faster startup/rendering and AI enhancements. Next.js 15 delivered strong gains over 14 (16% faster FCP, 14% faster LCP, 33% faster TBT, 40% better CLS, 15% faster TTI) via Turbopack (2-3x faster builds, 5-10x faster HMR). Herbst's hub on Next.js 15 is now one major version behind and should plan a migration path to 16.
+
+4. **Astro 6 Released — Cloudflare Acquired Astro:** The most significant ecosystem shift of 2026: Cloudflare has acquired Astro Technology Company. Astro remains open source and MIT-licensed, but the strategic direction now aligns with Cloudflare's edge network. Astro 6 features a refactored dev server (unified dev/prod runtime), stable Content Security Policy (CSP) support, Live Content Collections (fetch from CMS/API/database with unified API), and first-class Cloudflare Workers integration via workerd. The Astro Ecosystem Fund (backed by Webflow, Netlify, Wix, Sentry, Stainless) continues supporting community contributions. Starlight 0.38 updated for Astro 6 compatibility.
+
+5. **Platform Lock-in Risk Emerging — Two Competing Ecosystems:** The Astro-Cloudflare merger and Next.js's deep Vercel integration are creating two competing platform ecosystems: **Vercel** (Next.js + edge functions + Turso) vs **Cloudflare** (Astro + D1 + Workers). Herbst currently straddles both — Astro website, Next.js hub, Turso databases, Vercel deployments. This dual-stack approach provides optionality but may incur increasing friction as each ecosystem optimises for its own platform. Concurrent writes (coming soon for Turso) and async primitives via Linux io_uring signal Turso is investing in performance parity with traditional databases, reinforcing the Vercel+Turso stack viability.
+
+#### Relevance Score: 3/5
+
+Tech stack monitoring — no immediate action required, but the Astro-Cloudflare acquisition and Next.js 16 release create medium-term migration decisions.
+
+#### Actionable Recommendations
+- **Evaluate Next.js 15 to 16 migration** — review breaking changes and test the hub application against Next.js 16; Cache Components and Turbopack FS caching could materially improve hub performance
+- **Monitor the Astro-Cloudflare integration roadmap** — if Herbst's Astro website is deployed on Vercel, assess whether Cloudflare deployment would yield better performance or cost advantages post-acquisition
+- **Test Turso Embedded Replicas** for Herbst's read-heavy analytics databases — zero-latency local reads could significantly improve dashboard and reporting performance
+- **Track Turso's concurrent writes feature** (coming soon) — this addresses SQLite's traditional single-writer limitation and could unlock new use cases for the 298-table estate
+- **Conduct a platform strategy review in Q3 2026** to decide whether to consolidate on one ecosystem (Vercel or Cloudflare) or maintain the dual-stack approach with clear boundaries
+
+#### Sources
+- [Distributed SQLite: Why LibSQL and Turso are the New Standard in 2026](https://dev.to/dataformathub/distributed-sqlite-why-libsql-and-turso-are-the-new-standard-in-2026-58fk)
+- [The SQLite Renaissance 2026](https://dev.to/pockit_tools/the-sqlite-renaissance-why-the-worlds-most-deployed-database-is-taking-over-production-in-2026-3jcc)
+- [Best Turso Alternatives 2026 — Edge Database Pricing](https://www.buildmvpfast.com/alternatives/turso)
+- [Turso vs Cloudflare 2026](https://www.buildmvpfast.com/compare/turso-vs-cloudflare)
+- [Next.js 15 & 16 Features — Migration Guide 2026](https://jishulabs.com/blog/nextjs-15-16-features-migration-guide-2026)
+- [Next.js Current Version March 2026](https://www.abhs.in/blog/nextjs-current-version-march-2026-stable-release-whats-new)
+- [Astro 6 Beta Announcement](https://astro.build/blog/astro-6-beta/)
+- [Astro-Cloudflare Acquisition — InfoWorld](https://www.infoworld.com/article/4118245/astro-web-framework-maker-merges-with-cloudflare.html)
+- [Astro 6 Beta — InfoQ](https://www.infoq.com/news/2026/02/astro-v6-beta-cloudflare/)
+- [What's New in Astro — March 2026](https://astro.build/blog/whats-new-march-2026/)
+
+---
